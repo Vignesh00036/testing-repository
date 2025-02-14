@@ -15,7 +15,7 @@ pipeline {
             }
         }
 
-        stage ('Run') {
+        stage ('run') {
             steps {
                 script {
                     gv.running()   
