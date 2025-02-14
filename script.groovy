@@ -1,5 +1,12 @@
+def testing() {
+    echo "Testing application version ${params.version}"
+}
+
 def running() {
-    echo "Running application ${params.version}"
+    echo "Running python ${params.version}"
+    sh '''
+        python3 test.py
+    '''
 }
 
 return this
