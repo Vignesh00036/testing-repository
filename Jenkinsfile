@@ -14,6 +14,5 @@ pipeline {
         stage ('Run') {
             gv.running()
         }
-        }
     }
 }
