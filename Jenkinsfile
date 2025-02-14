@@ -15,10 +15,18 @@ pipeline {
             }
         }
 
-        stage ('run') {
+        stage ('test') {
             steps {
                 script {
                     gv.running()   
+                }
+            }
+        }
+
+        stage ('run') {
+            steps {
+                script {
+                    gv.running()
                 }
             }
         }
