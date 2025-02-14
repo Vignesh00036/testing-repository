@@ -9,6 +9,7 @@ pipeline {
                 echo 'Running'
                 sh '''
                     python3 test.py
+                    4
                 '''
             }
         }
