@@ -4,15 +4,6 @@ pipeline {
         pollSCM '* * * * *'
     }
     stages {
-        stage ('Installing Python') {
-            steps {
-                echo 'Installing'
-                sh '''
-                    apt install python3 python3-pip -y
-                '''
-            }
-        }
-        
         stage ('Running python') {
             steps {
                 echo 'Running'
