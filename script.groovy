@@ -1,3 +1,3 @@
 def running() {
-    echo "Running application ${version}"
+    echo "Running application ${params.version}"
 }
